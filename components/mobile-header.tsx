@@ -1,4 +1,4 @@
-import { MobileSidebar } from "@/components/ui/mobile-sidebar"
+import { MobileSidebar } from "@/components/mobile-sidebar"
 
 export const MobileHeader = () => {
     return (

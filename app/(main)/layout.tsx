@@ -1,5 +1,5 @@
-import { Sidebar } from "@/components/ui/sidebar";
-import { MobileHeader } from "@/components/ui/mobile-header";
+import { Sidebar } from "@/components/sidebar";
+import { MobileHeader } from "@/components/mobile-header";
 
 type Props = {
     children: React.ReactNode
@@ -11,7 +11,7 @@ const MainLayout = ({ children }: Props) => {
         <MobileHeader />
         <Sidebar className="hidden lg:flex" />
         <main className="lg:pl-[250px] h-full pt-[50px] lg:pt-0">
-            <div className="bg-red-500 h-full">
+            <div className="max-w-[1056px] max-auto pt-6 h-full">
             {children}
             </div>
         </main>
