@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+html,
+body,
+:root {
+  @apply h-full;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -118,5 +124,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    @apply h-full
   }
 }
